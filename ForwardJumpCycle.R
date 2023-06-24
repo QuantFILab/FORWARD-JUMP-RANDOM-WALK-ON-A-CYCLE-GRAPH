@@ -14,6 +14,7 @@
 # Probability of the arriving state at node r
 
 pmf.arr <- function(r,n,d,m){
+  z <- 0+1i
   w <- exp(2*pi*z/d)
   sumt <- 0
   for(k in 1:(d-1)){
