@@ -42,8 +42,6 @@ pmf.arr.dist <- function(n,d,m){
   return(dist.r)
 }
 
-
-
 ##################################################################
 # PMF of Hitting Time 
 ##################################################################
@@ -54,9 +52,6 @@ pmf.arr.dist <- function(n,d,m){
 # - lim.n is maximum  number of walking step shown in density 
 #output
 # PMF of Hitting Time 
-
-
-
 
 pmf.hit <- function(r,lim.n,d,m){
   if(n == 1){
@@ -77,9 +72,6 @@ pmf.hit <- function(r,lim.n,d,m){
   return(hit.re)
 }
 
-
-
-
 ##################################################################
 # Expected Value of Hitting Time 
 ##################################################################
@@ -99,7 +91,6 @@ ex.hit <- function(r,d,m){
   }
   return(Re(sumt) + d)
 }
-
 
 ##################################################################
 # Variance of Hitting Time 
