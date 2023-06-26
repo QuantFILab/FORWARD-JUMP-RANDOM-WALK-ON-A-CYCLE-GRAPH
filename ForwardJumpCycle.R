@@ -83,6 +83,7 @@ pmf.hit <- function(r,lim.n,d,m){
 # Expected Value of Hitting Time from node 0 to node r 
 
 ex.hit <- function(r,d,m){
+  z <- 0+1i
   w <- exp(2*pi*z/d)
   sumt <- 0
   for(k in 1:(d-1)){
@@ -103,6 +104,7 @@ ex.hit <- function(r,d,m){
 # Variance of Hitting Time from node 0 to node r 
 
 var.hit <- function(r,d,m){
+  z <- 0+1i
   w <- exp(2*pi*z/d)
   sumt.1 <- 0
   sumt.2 <- 0
